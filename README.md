@@ -3,61 +3,25 @@ MERN E-Commerce Website
 A full-stack e-commerce portfolio application built with MongoDB, Express.js, React.js, and Node.js. It includes JWT authentication, customer/admin authorization, product management, a persistent shopping cart, order history, Razorpay Checkout, server-side payment verification, Razorpay webhooks, and an admin dashboard.
 
 Features:-
-Customer registration and login with bcrypt password hashing and JWT authentication
-Role-based access control for customer and admin routes
-Product catalogue, product details, search, and admin product CRUD
-Browser-persisted shopping cart and server-calculated order totals
-Customer order history and admin order fulfilment management
-Razorpay order creation using trusted MongoDB order totals
-HMAC-SHA256 Checkout signature validation and server-side Razorpay payment fetch
-Razorpay webhook signature validation using the raw request body
-Helmet security headers, CORS allowlist, JSON payload limits, and API/auth/payment rate limits
-Responsive React interface
-Render backend and Vercel frontend deployment configuration
+1 Customer registration and login with bcrypt password hashing and JWT authentication
+2 Role-based access control for customer and admin routes
+3 Product catalogue, product details, search, and admin product CRUD
+4 Browser-persisted shopping cart and server-calculated order totals
+5 Customer order history and admin order fulfilment management
+6 Razorpay order creation using trusted MongoDB order totals
+7 HMAC-SHA256 Checkout signature validation and server-side Razorpay payment fetch
+8 Razorpay webhook signature validation using the raw request body
+9 Helmet security headers, CORS allowlist, JSON payload limits, and API/auth/payment rate limits
+10 Responsive React interface
+11 Render backend and Vercel frontend deployment configuration
 
-Tech stack
-
-**| Layer | Technologies |**
-|---|---|
-| Frontend | React 18, Vite, React Router, Axios, Lucide React |
-| Backend | Node.js 20+, Express 4, Mongoose |
-| Database | MongoDB local or MongoDB Atlas |
-| Authentication | JWT, bcryptjs, role-based middleware |
-| Payments | Razorpay Node.js SDK and Checkout.js |
-| Deployment | Render (API), Vercel (frontend) |
-
-**Project structure**
-
-**mern-ecommerce/**
-├── backend/
-│   ├── src/
-│   │   ├── config/          # MongoDB connection
-│   │   ├── middleware/      # JWT and role authorization
-│   │   ├── models/          # User, Product, Order
-│   │   ├── routes/          # Auth, products, orders, payments
-│   │   ├── seed.js          # Creates a private admin and sample products
-│   │   └── server.js        # Express app and startup
-│   ├── .env.example
-│   └── package.json
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── api.js
-│   │   └── styles.css
-│   ├── .env.example
-│   ├── vercel.json
-│   └── package.json
-├── docs/
-│   ├── API.md
-│   └── DEPLOYMENT.md
-├── screenshots/             # Add real app screenshots here
-├── .github/workflows/ci.yml
-├── render.yaml
-├── SECURITY.md
-├── .gitignore
-└── README.md
+**Technologies**
+Frontend - React 18, Vite, React Router, Axios, Lucide React
+Backend - Node.js 20+, Express 4, Mongoose
+Database - MongoDB local or MongoDB Atlas
+Authentication | JWT, bcryptjs, role-based middleware 
+Payments- Razorpay Node.js SDK and Checkout.js
+Deployment - Render (API), Vercel (frontend)
 
 Requirements:-
 Node.js 20 or newer (Node.js 22 recommended)
