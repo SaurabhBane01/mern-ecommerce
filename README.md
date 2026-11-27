@@ -100,7 +100,6 @@ MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_jwt_secret
 RAZORPAY_KEY_ID=your_razorpay_key
 RAZORPAY_KEY_SECRET=your_razorpay_secret
-RAZORPAY_WEBHOOK_SECRET=your_webhook_secret
 ```
 
 **4. Start backend**
